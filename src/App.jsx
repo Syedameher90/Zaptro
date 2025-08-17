@@ -21,10 +21,10 @@ const getLocation = async () => {
       const { latitude, longitude } = pos.coords
       // console.log(latitude, longitude);
 
-     const url = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json&email=youremail@example.com`;
+    //  const url = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json&email=youremail@example.com`;
 
       try {
-        const location = await axios.get(url)
+        const location = await axios.get()
         const exactLocation = location.data.address
         setLocation(exactLocation)
         setOpenDropdown(false)

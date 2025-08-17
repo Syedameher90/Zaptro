@@ -1,5 +1,7 @@
 import axios from "axios";
 import { createContext, useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const DataContext = createContext(null);
 
@@ -11,8 +13,11 @@ export const DataProvider = ({children}) => {
 
     const fetchAllProducts = async () => {
        try {
-           const res = await axios.get('https://fakestoreapi.in/api/products?limit=150')
+           const res = await axios.get('https://fakestoreapi.com/products?limit=20')
+
            console.log(res);
+           const productsData = res.data.products
+           setData(productsData)
        }
     catch(error) {
         console.log(error)
