@@ -27,7 +27,9 @@ const Carousel = () => {
           return <div key={index} className='bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] -z-10'>
             <div className="flex gap-10 justify-center h-[600px] items-center px-4">
               <div className="space-y-6">
-                <h3 className=""></h3>
+                <h3 className="text-red-500 font-semibold font-sans text-sm">Powering Your World with the Best in Electronics</h3>
+              <h1 className="text-4xl font-bold uppercase line-clamp-3 md:w-[500px] text-white">{item.title}</h1>
+              <p className="md:w-[500px] line-clamp-3 text-gray-400 pr-7">{item.description}</p>
               </div>
             </div>
           </div>
