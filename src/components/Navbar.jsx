@@ -11,7 +11,7 @@ const Navbar = ({location, getLocation, openDropdown, setOpenDropdown}) => {
     
   }
   return (
-    <div className=' bg-white py-3 px-4 shadow-xl'>
+    <div className=' bg-white py-1 px-3 shadow-xl'>
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo section */}
         <div className="flex items-center  gap-7">
